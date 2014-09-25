@@ -18,6 +18,14 @@ module PokerPlayer
       return result['hand_strength']      
     end
 
+    def self.effective_hand_strength(hole_cards, board_cards)
+      hp = hand_potential(hole_cards, board_cards)
+      ppot = hp['ppot']
+      npot = hp['npot']
+      hs = hand_strength(hole_cards, board_cards)
+      return (hs * (1 - npot)) + ((1 - hs) * ppot)
+    end
+
   end
 end
  

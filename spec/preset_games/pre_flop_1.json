@@ -1,0 +1,38 @@
+{
+  "my_player_id": 1,
+  "small_blinds": 2,
+  "big_blinds": 4,
+  "players": [
+    {
+      "id": 0,
+      "bank_roll": 100,
+      "current_bet": 0,
+      "last_move": null,
+      "cards_shown": false
+    },
+    {
+      "id": 1,
+      "bank_roll": 100,
+      "current_bet": 0,
+      "last_move": null,
+      "cards_shown": false,
+      "hole_cards": [
+        "Td",
+        "7s"
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "stage": "pre_flop",
+      "board_cards": [
+        "3d",
+        "5d",
+        "Kc"
+      ],
+      "pot": 0,
+      "bet_history": [],
+      "next_player": 1
+    }
+  ]
+}

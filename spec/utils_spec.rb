@@ -9,14 +9,14 @@ describe PokerPlayer::Utils do
   describe '#hand_potentential' do
     context 'on the flop' do
       subject{ PokerPlayer::Utils.hand_potential('2d 3c', 'Td 9c Kd') }
-      it do
+      xit do
           expect(subject['ppot'].round(2)).to eq(0.13)
           expect(subject['npot'].round(2)).to eq(0.76)
         end
       end
     context 'on the turn' do
       subject{ PokerPlayer::Utils.hand_potential('2d 3c', 'Td 9c Kd 3d') }
-      it do
+      xit do
         expect(subject['ppot'].round(2)).to eq(0.28)
         expect(subject['npot'].round(2)).to eq(0.72)
       end

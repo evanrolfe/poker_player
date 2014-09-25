@@ -1,0 +1,123 @@
+{
+  "my_player_id": 1,
+  "small_blinds": 2,
+  "big_blinds": 4,
+  "players": [
+    {
+      "id": 0,
+      "bank_roll": 93,
+      "current_bet": 12,
+      "last_move": "bet",
+      "cards_shown": false
+    },
+    {
+      "id": 1,
+      "bank_roll": 96,
+      "current_bet": 12,
+      "last_move": "call",
+      "cards_shown": false,
+      "hole_cards": [
+        "Kd",
+        "3s"
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "stage": "river",
+      "board_cards": [
+        "3d",
+        "5d",
+        "Kc"
+      ],
+      "pot": 11,
+      "bet_history": [
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 2
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 2
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 0
+        },  
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "call",
+          "amount": 0
+        }, 
+        {
+          "player": 0,
+          "stage": "turn",
+          "move": "bet",
+          "amount": 5
+        },
+        {
+          "player": 1,
+          "stage": "turn",
+          "move": "call",
+          "amount": 5
+        },
+        {
+          "player": 0,
+          "stage": "turn",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 1,
+          "stage": "turn",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 0,
+          "stage": "river",
+          "move": "call",
+          "amount": 0
+        }                                      
+      ],
+      "next_player": 1
+    }
+  ]
+}
