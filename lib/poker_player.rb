@@ -1,6 +1,18 @@
 require 'json'
+require 'ruby-poker'
+
+require 'rubygems'
+require 'bundler'
+require 'rake'
+require 'rspec'
+require 'pry'
+require 'ffi'
+require 'pokereval'
+
 require 'poker_player/version'
-require 'poker_player/utils'
+require 'poker_player/constants'
+require 'poker_player/deck'
+require 'poker_player/calculations'
 
 module PokerPlayer
 
@@ -61,18 +73,23 @@ module PokerPlayer
   end
 
   def self.pre_flop_ideal_move(hole_cards, board_cards, bank_roll)
-    ranking = Utils.chen_formula(hole_cards)
-    return case
-      when ranking > 15 then bet bank_roll * 0.06
-      when ranking <= 15 && ranking > 10 then bet bank_roll * 0.04    
-      when ranking <= 10 && ranking > 5 then bet bank_roll * 0.02           
+    group = Calculations.sklansky_group(hole_cards.join)
+    return case group
+      when 1 then bet bank_roll * 0.16
+      when 2 then bet bank_roll * 0.14    
+      when 3 then bet bank_roll * 0.12  
+      when 4 then bet bank_roll * 0.10
+      when 5 then bet bank_roll * 0.08
+      when 6 then bet bank_roll * 0.06
+      when 7 then bet bank_roll * 0.04
+      when 8 then bet bank_roll * 0.02       
       else fold        
     end    
   end
 
   def self.flop_ideal_move(hole_cards, board_cards, bank_roll)
-    ehs = Utils.effective_hand_strength(hole_cards.join(' '), board_cards.join(' '))
-    bet_multiplier = 0.07
+    ehs = Calculations.effective_hand_strength(hole_cards.join, board_cards.join)
+    bet_multiplier = 0.5
 
     if ehs > 0.5
       bet bank_roll * ehs * bet_multiplier
@@ -86,9 +103,8 @@ module PokerPlayer
   end
 
   def self.river_ideal_move(hole_cards, board_cards, bank_roll)
-    hs = Utils.hand_strength(hole_cards.join(' '), board_cards.join(' '))
-    bet_multiplier = 0.07
-
+    hs = Calculations.hand_strength(hole_cards.join, board_cards.join)
+    bet_multiplier = 0.9
     if hs > 0.5
       bet bank_roll * hs * bet_multiplier
     else

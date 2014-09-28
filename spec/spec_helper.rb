@@ -1,5 +1,4 @@
 require 'rspec'
-require 'rspec/its'
 require 'pry'
 require 'poker_player'
 
