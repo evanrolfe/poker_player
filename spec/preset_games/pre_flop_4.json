@@ -1,0 +1,421 @@
+{
+  "my_player_id": 1,
+  "small_blinds": 2,
+  "big_blinds": 4,
+  "players": [
+    {
+      "id": 0,
+      "bank_roll": -28,
+      "current_bet": 29,
+      "last_move": "call",
+      "cards_shown": true,
+      "hole_cards": [
+        "Qd",
+        "Ks"
+      ]
+    },
+    {
+      "id": 1,
+      "bank_roll": 170,
+      "current_bet": 29,
+      "last_move": "bet",
+      "cards_shown": true,
+      "hole_cards": [
+        "2d",
+        "6h"
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "stage": "show_down",
+      "board_cards": [
+        "Jd",
+        "Qd",
+        "3h",
+        "3c",
+        "Kd"
+      ],
+      "pot": 198,
+      "bet_history": [
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 2
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 7
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 5
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 7
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 7
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 6
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 6
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 6
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 6
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 5
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 5
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 5
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 5
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 21
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 21
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 12
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 12
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 7
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 7
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 2
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 2
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 1
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 1
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "bet",
+          "amount": 1
+        },
+        {
+          "player": 0,
+          "stage": "flop",
+          "move": "call",
+          "amount": 1
+        },
+        {
+          "player": 1,
+          "stage": "flop",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 1,
+          "stage": "turn",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 0,
+          "stage": "turn",
+          "move": "call",
+          "amount": 0
+        },
+        {
+          "player": 1,
+          "stage": "river",
+          "move": "bet",
+          "amount": 1
+        },
+        {
+          "player": 0,
+          "stage": "river",
+          "move": "call",
+          "amount": 1
+        },
+        {
+          "player": 1,
+          "stage": "river",
+          "move": "call",
+          "amount": 0
+        }
+      ],
+      "winner": 0
+    },
+    {
+      "stage": "pre_flop",
+      "board_cards": [
+
+      ],
+      "pot": 58,
+      "bet_history": [
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 2
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 4
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 1
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        },
+        {
+          "player": 1,
+          "stage": "pre_flop",
+          "move": "bet",
+          "amount": 3
+        },
+        {
+          "player": 0,
+          "stage": "pre_flop",
+          "move": "call",
+          "amount": 3
+        }
+      ],
+      "next_player": 1
+    }
+  ]
+}

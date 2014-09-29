@@ -19,6 +19,12 @@ describe PokerPlayer do
     expect(move.first).to eq('fold')
   end
 
+  it 'PRE FLOP GAME 4' do
+    game_json = load_game('pre_flop_4')
+    move = PokerPlayer.get_move(game_json)
+    expect(move.first).to eq('call')
+  end
+
   it 'FLOP GAME 1' do
     game_json = load_game('flop_1')
     move = PokerPlayer.get_move(game_json)
